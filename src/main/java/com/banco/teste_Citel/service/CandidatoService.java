@@ -6,6 +6,7 @@ import com.banco.teste_Citel.repository.CandidatoRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -168,4 +169,5 @@ public class CandidatoService {
         int faixa = (idade / 10) * 10;
         return faixa + " a " + (faixa + 9);
     }
+
 }
